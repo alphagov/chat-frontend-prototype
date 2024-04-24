@@ -1,0 +1,19 @@
+{
+  "name": "chat-fe-experiments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/styles/app.scss build/app.css --style=compressed",
+    "sass:watch": "sass --watch src/styles/app.scss build/app.css --style=compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "govuk-frontend": "^5.3.0"
+  },
+  "devDependencies": {
+    "sass": "^1.75.0"
+  }
+}
