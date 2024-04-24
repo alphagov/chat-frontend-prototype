@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "sass": "sass src/styles/app.scss build/app.css --style=compressed",
     "sass:watch": "sass --watch src/styles/app.scss build/app.css --style=compressed"
   },
