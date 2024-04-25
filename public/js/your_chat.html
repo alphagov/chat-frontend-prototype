@@ -60,106 +60,109 @@
     </header>
     <div class="govuk-width-container app-width-container">
       <main class="govuk-main-wrapper app-main-class" id="main-content">
-        <div class="messages" aria-live="polite" data-group="1">
-          <div class="message">
-            <p class="govuk-body">Hello 👋</p>
-            <p class="govuk-body">I'm GOV.UK Chat.</p>
-            <p class="govuk-body">
-              I'm an experimental tool that uses AI to answer questions and help you find
-              information on GOV.UK.
-            </p>
-            <p class="govuk-body">
-              <strong>I have limitations that you need to be aware of.</strong>
-            </p>
-          </div>
-          <div class="message">
-            <p class="govuk-body">
-              The biggest limitation of AI tools like me is a problem known as 'hallucination'.
-            </p>
-            <p class="govuk-body">
-              This means we sometimes make up false information or facts but present them to you
-              confidently.
-            </p>
-          </div>
-          <div class="message">
-            <p class="govuk-body">
-              To check if my answers are right, use the links I provide to official guidance on
-              GOV.UK. Never act on what I've told you without checking GOV.UK.
-            </p>
-          </div>
-          <div class="button-group">
-            <div class="govuk-width-container">
-              <div class="govuk-grid-row">
-                <div class="govuk-grid-column-two-thirds">
-                  <p class="govuk-body govuk-!-margin-bottom-0">
-                    <button type="button" id="iUnderstand" class="govuk-button blue">
-                      I understand
-                    </button>
-                    <button type="button" class="govuk-button govuk-button--secondary">
-                      Tell me more
-                    </button>
-                  </p>
+        <div class="messages__wrapper">
+          <div class="messages" aria-live="polite" data-group="1">
+            <div class="message">
+              <p class="govuk-body">Hello 👋</p>
+              <p class="govuk-body">I'm GOV.UK Chat.</p>
+              <p class="govuk-body">
+                I'm an experimental tool that uses AI to answer questions and help you find
+                information on GOV.UK.
+              </p>
+              <p class="govuk-body">
+                <strong>I have limitations that you need to be aware of.</strong>
+              </p>
+            </div>
+            <div class="message">
+              <p class="govuk-body">
+                The biggest limitation of AI tools like me is a problem known as 'hallucination'.
+              </p>
+              <p class="govuk-body">
+                This means we sometimes make up false information or facts but present them to you
+                confidently.
+              </p>
+            </div>
+            <div class="message">
+              <p class="govuk-body">
+                To check if my answers are right, use the links I provide to official guidance on
+                GOV.UK. Never act on what I've told you without checking GOV.UK.
+              </p>
+            </div>
+            <div class="button-group">
+              <div class="govuk-width-container">
+                <div class="govuk-grid-row">
+                  <div class="govuk-grid-column-two-thirds">
+                    <p class="govuk-body govuk-!-margin-bottom-0">
+                      <button type="button" id="iUnderstand" class="govuk-button blue">
+                        I understand
+                      </button>
+                      <button type="button" class="govuk-button govuk-button--secondary">
+                        Tell me more
+                      </button>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="message author-message understand" aria-live="polite">
-          <p class="govuk-body">I understand</p>
-        </div>
+          <div class="message author-message understand" aria-live="polite">
+            <p class="govuk-body">I understand</p>
+          </div>
 
-        <div class="messages" aria-live="polite" data-group="2">
-          <div class="message">
-            <p class="govuk-body">
-              Great. You can always find information about my limitations in
-              <a href="" target="_blank">about GOV.UK Chat (opens in a new tab)</a>.
-            </p>
-          </div>
-          <div class="message">
-            <p class="govuk-body">
-              One more thing - please do not include any sensitive or personal information in your
-              questions.
-            </p>
-            <p class="govuk-body">
-              You can read the <a href="" target="_blank">privacy notice (opens in a new tab)</a> to
-              find out how your data is used.
-            </p>
-          </div>
-          <div class="button-group">
-            <div class="govuk-width-container">
-              <div class="govuk-grid-row">
-                <div class="govuk-grid-column-two-thirds">
-                  <p class="govuk-body govuk-!-margin-bottom-0">
-                    <button type="button" id="beginChat" class="govuk-button blue">
-                      Okay, start chatting
-                    </button>
-                  </p>
+          <div class="messages" aria-live="polite" data-group="2">
+            <div class="message">
+              <p class="govuk-body">
+                Great. You can always find information about my limitations in
+                <a href="" target="_blank">about GOV.UK Chat (opens in a new tab)</a>.
+              </p>
+            </div>
+            <div class="message">
+              <p class="govuk-body">
+                One more thing - please do not include any sensitive or personal information in your
+                questions.
+              </p>
+              <p class="govuk-body">
+                You can read the
+                <a href="" target="_blank">privacy notice (opens in a new tab)</a> to find out how
+                your data is used.
+              </p>
+            </div>
+            <div class="button-group">
+              <div class="govuk-width-container">
+                <div class="govuk-grid-row">
+                  <div class="govuk-grid-column-two-thirds">
+                    <p class="govuk-body govuk-!-margin-bottom-0">
+                      <button type="button" id="beginChat" class="govuk-button blue">
+                        Okay, start chatting
+                      </button>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="message author-message okay" aria-live="polite">
-          <p class="govuk-body">Okay</p>
-        </div>
-
-        <div class="messages" aria-live="polite" data-group="3">
-          <div class="message">
-            <p class="govuk-body">Thanks! To get started, ask me a question.</p>
+          <div class="message author-message okay" aria-live="polite">
+            <p class="govuk-body">Okay</p>
           </div>
 
-          <div class="form-group">
-            <div class="govuk-form-group govuk-!-margin-bottom-0">
-              <label class="govuk-label govuk-label--l govuk-visually-hidden" for="q">
-                What is the name of the event?
-              </label>
-              <input class="govuk-input govuk-!-margin-bottom-2" id="q" name="q" type="text" />
+          <div class="messages" aria-live="polite" data-group="3">
+            <div class="message">
+              <p class="govuk-body">Thanks! To get started, ask me a question.</p>
             </div>
-            <p class="govuk-body govuk-!-margin-bottom-0">
-              <a href="" class="govuk-link">Share your feedback (opens in a new tab)</a>
-            </p>
+
+            <div class="form-group">
+              <div class="govuk-form-group govuk-!-margin-bottom-0">
+                <label class="govuk-label govuk-label--l govuk-visually-hidden" for="q">
+                  What is the name of the event?
+                </label>
+                <input class="govuk-input govuk-!-margin-bottom-2" id="q" name="q" type="text" />
+              </div>
+              <p class="govuk-body govuk-!-margin-bottom-0">
+                <a href="" class="govuk-link">Share your feedback (opens in a new tab)</a>
+              </p>
+            </div>
           </div>
         </div>
       </main>
