@@ -12,8 +12,8 @@
     {% include "layout/header.njk" %}
     <div class="govuk-width-container app-width-container">
       <main class="govuk-main-wrapper app-main-class" id="main-content">
-        <div class="messages__wrapper">
-          <div class="messages" aria-live="polite" data-group="1">
+        <div class="messages__wrapper" aria-live="polite">
+          <div class="messages" data-group="1">
             <div class="message">
               <p class="govuk-body">Hello 👋</p>
               <p class="govuk-body">I'm GOV.UK Chat.</p>
@@ -66,11 +66,11 @@
           </div> -->
           </div>
 
-          <div class="message author-message understand" aria-live="polite">
+          <div class="message author-message understand">
             <p class="govuk-body">I understand</p>
           </div>
 
-          <div class="messages" id="MessageGroup2" aria-live="polite" data-group="2">
+          <div class="messages" id="MessageGroup2" data-group="2">
             <div class="message">
               <p class="govuk-body">
                 Great. You can always find information about my limitations in
