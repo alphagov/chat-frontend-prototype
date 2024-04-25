@@ -4,6 +4,10 @@
 //   display: none !important;
 // }
 
+body {
+  position: relative;
+}
+
 .page-title {
   @include govuk-typography-common($font-family: $govuk-font-family);
   @include govuk-typography-weight-bold($important: false);
