@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template app-html-class">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="/build/app.css" />
+  </head>
+
+  <body class="govuk-template__body">
+    {% include "layout/header.njk" %}
+    <div class="govuk-width-container app-width-container">
+      <main class="govuk-main-wrapper app-main-class" id="main-content">
+        <h1 class="page-title">GOV.UK Chat</h1>
+        <ul class="govuk-list">
+          <li>
+            <a class="govuk-link" href="js/get_started">JavaScript (single page)</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="no-js/get_started">No JavaScript (3 separate pages)</a>
+          </li>
+        </ul>
+      </main>
+    </div>
+  </body>
+</html>
