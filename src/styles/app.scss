@@ -85,7 +85,7 @@ body {
   @include govuk-media-query($from: tablet) {
     bottom: 0;
     left: 0;
-    position: absolute;
+    position: fixed;
   }
 }
 
@@ -101,6 +101,10 @@ body {
 
 .govuk-button {
   margin-bottom: govuk-spacing(2);
+
+  @include govuk-media-query($from: tablet) {
+    margin-bottom: govuk-spacing(0);
+  }
 
   &.blue {
     background-color: govuk-colour("blue");
