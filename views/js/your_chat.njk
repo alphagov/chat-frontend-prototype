@@ -13,7 +13,7 @@
     <div class="govuk-width-container app-width-container">
       <main class="govuk-main-wrapper app-main-class" id="main-content">
         <div class="messages__wrapper" aria-live="polite">
-          <div class="messages" data-group="1">
+          <div class="messages" aria-atomic="true" data-group="1">
             {% include "messages/message-1.njk" %}
             <div class="button-group">
               <div class="govuk-width-container">
@@ -33,7 +33,7 @@
             </div>
           </div>
 
-          <div class="messages" data-group="2">
+          <div class="messages" aria-atomic="true" data-group="2">
             {% include "messages/message-2.njk" %}
             <div class="button-group">
               <div class="govuk-width-container">
@@ -50,7 +50,7 @@
             </div>
           </div>
 
-          <div class="messages" data-group="3">
+          <div class="messages" aria-atomic="true" data-group="3">
             {% include "messages/message-3.njk" %}
             <div class="form-group">
               <div class="govuk-form-group govuk-!-margin-bottom-0">
