@@ -108,5 +108,18 @@ body {
 
   &.blue {
     background-color: govuk-colour("blue");
+
+    .message-form-group & {
+      border: none;
+      box-shadow: inset 0 -2px govuk-colour("black");
+      height: 2.5rem;
+      flex: 0 1 0;
+      margin: 0 0 0 govuk-spacing(1);
+    }
   }
+}
+
+.message-form-group {
+  display: flex;
+  align-items: center;
 }

@@ -70,10 +70,11 @@
             {% include "messages/message-3.njk" %}
             <div class="form-group">
               <div class="govuk-form-group govuk-!-margin-bottom-0">
-                <label class="govuk-label govuk-label--l govuk-visually-hidden" for="q">
-                  What is the name of the event?
-                </label>
-                <input class="govuk-input govuk-!-margin-bottom-2" id="q" name="q" type="text" />
+                <div class="message-form-group govuk-!-margin-bottom-2">
+                  <label class="govuk-label govuk-label--l govuk-visually-hidden" for="q"> How can I help you today?</label>
+                  <input class="govuk-input" id="q" name="q" type="text" />
+                  <button class="govuk-button blue">Send</button>
+                </div>
               </div>
               <p class="govuk-body govuk-!-margin-bottom-0">
                 <a href="" class="govuk-link">Share your feedback (opens in a new tab)</a>
