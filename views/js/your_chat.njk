@@ -12,8 +12,9 @@
     {% include "layout/header.njk" %}
     <div class="govuk-width-container app-width-container">
       <main class="govuk-main-wrapper app-main-class" id="main-content">
-        <div class="messages__wrapper" aria-live="polite">
-          <div class="messages" aria-atomic="true" data-group="1">
+        <div class="messages__wrapper">
+          <h2 id="onboarding" hidden>Chat onboarding</h2>
+          <div class="messages" data-group="1" role="log" aria-labelledby="onboarding" aria-live="polite" aria-atomic="true">
             {% include "messages/message-1.njk" %}
             <div class="button-group">
               <div class="govuk-width-container">
@@ -29,7 +30,7 @@
             </div>
           </div>
 
-          <div class="messages" aria-atomic="true" data-group="2">
+          <div class="messages" data-group="2" role="log" aria-labelledby="onboarding" aria-live="polite" aria-atomic="true">
             {% include "messages/message-2.njk" %}
             <div class="button-group">
               <div class="govuk-width-container">
@@ -44,7 +45,7 @@
             </div>
           </div>
 
-          <div class="messages" aria-atomic="true" data-group="3">
+          <div class="messages" data-group="3" role="log" aria-labelledby="onboarding" aria-live="polite" aria-atomic="true">
             {% include "messages/message-3.njk" %}
             <div class="form-group">
               <div class="govuk-form-group govuk-!-margin-bottom-0">
