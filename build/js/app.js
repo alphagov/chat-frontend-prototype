@@ -1,13 +1,7 @@
 (function () {
-  const hiddenMessagesGroup1 = document.querySelectorAll(
-    "[data-group='1'] .message, [data-group='1'] .button-group"
-  );
-  const hiddenMessagesGroup2 = document.querySelectorAll(
-    "[data-group='2'] .message, [data-group='2'] .button-group"
-  );
-  const hiddenMessagesGroup3 = document.querySelectorAll(
-    "[data-group='3'] .message, [data-group='3'] .form-group"
-  );
+  const hiddenMessagesGroup1 = document.querySelectorAll("[data-group='1'] .message, [data-group='1'] .button-group");
+  const hiddenMessagesGroup2 = document.querySelectorAll("[data-group='2'] .message, [data-group='2'] .button-group");
+  const hiddenMessagesGroup3 = document.querySelectorAll("[data-group='3'] .message, [data-group='3'] .form-group");
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   function showChatMessages(messages) {
@@ -21,11 +15,11 @@
     }
 
     messages.forEach((message, index) => {
-      let delay = index * 2000;
-      showChatMessageWithDelay(message, delay).then(() => {
-        console.log(`Message ${index + 1} displayed`);
+      let delay = (index + 1) * 500;
+      setTimeout(async () => {
+        await showChatMessageWithDelay(message, delay);
         scrollToMessages(message);
-      });
+      }, delay);
     });
   }
 
