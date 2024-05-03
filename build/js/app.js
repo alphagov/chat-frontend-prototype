@@ -9,6 +9,8 @@
     let messageGroup = document.querySelector(`[data-group='${groupIndex}']`);
     // let messageGroup = document.querySelector(".messages__wrapper");
     messageGroup.setAttribute("aria-busy", true);
+    messageGroup.setAttribute("tabindex", 0);
+    messageGroup.focus();
 
     function showChatMessageWithDelay(message, delay) {
       return new Promise((resolve) => {
